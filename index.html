@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Instagram </title>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body /*onload="botao()"*/>
+    <div class="instagram-wrapper">
+        <div class="instagram-phone">
+             <img src="./img/celular.png" alt="Celular">
+        </div>
+        <div class="instagram-continue">
+            <div class="group">
+                <img src="./img/Logo2.jpg" class="instagram-logo" alt="Logo">
+                <div class="profile-photo">
+                    <img src="./img/foto_rosto.jpg" alt="Profile">
+                </div>
+                    <a href="#" class="instagram-login" onclick="botao()">Continue como Bruno Cerqueira</a>
+                    <p id="MenorIdade" class="instagram-logout" > </p>
+                    <a  id="MaiorIdade" class="instagram-logout" onclick="redirecionar()"> </a>
+                    <a href="#" class="instagram-logout" onmouseover="MouseOver(this)" onmouseout="MouseOut (this)">Remover conta</a>
+            </div>
+            <div class="group">
+                    <p class="not-account">Não é Bruno Cerqueira</p>
+                    <p class="not-account">
+                        <span class="link-blue">Alternar contas</span>
+                        ou
+                        <span class="link-blue">Inscreva-se</span>
+                    </p>
+            </div>
+            <div class="get-the-app">
+                    <p class="get-app">Visite nossos sites</p>
+                    <select onchange="escolhasite(this)">
+                        <option value="0" >Escolha o site</option>
+                        <option value="1">NK Salão de Beleza</option>
+                        <option value="2">Arte da Gestão</option>
+                        <option value="3">Ler QRCode</option>
+                    </select>
+                    <div class="download">
+                        <a href="#" class="app-download"></a>
+                        <a href="#" class="app-download"></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
